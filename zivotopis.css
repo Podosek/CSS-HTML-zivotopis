@@ -1,0 +1,288 @@
+html {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: helvetica;
+    display: flex;
+    justify-content: center;
+}
+
+summary {
+    list-style: none;
+}
+
+details summary::before{
+    content: "\f103";
+    font-family: "Font Awesome 5 Free";
+    padding-right: 10px;
+}
+
+details[open] summary::before {
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    padding-right: 10px;
+}
+
+.container {
+    width: 1000px;
+}
+
+section .container {
+    display: grid;
+    grid-template-rows:min-content min-content min-content min-content min-content;
+    grid-template-columns: min-content fr;
+    grid-template-areas:
+    "dovednosti profil"
+    "software vzdelani"
+    "jazyky zamestnani"
+    "kurzy certifikaty";
+    justify-content: start;
+    background-color: lightgoldenrodyellow;
+    border: 15px solid lightgoldenrodyellow;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    border: 15px solid lightgoldenrodyellow;
+    background-color: darkcyan;
+}
+
+header a {
+    color: black;
+}
+
+header a:hover {
+    color: #CD201F;
+    transform: scale(1.5);
+    transition: all 0.3s ease-out;
+    display: inline-block;
+}
+
+header ul {
+    list-style: none;
+    margin: 0 0 5px 20px;
+    padding:0;
+}
+
+header ul li {
+    padding-top: 5px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+/* summary{
+    width: 75vh;
+} */
+
+.profil {
+    grid-area: profil;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.profil summary {
+    border-bottom: 3px solid darkcyan;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.vzdelani {
+    grid-area: vzdelani;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.vzdelani summary {
+    border-bottom: 3px solid darkcyan;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.zamestnani {
+    grid-area: zamestnani;
+    padding-left: 10px;
+}
+
+.zamestnani summary {
+    border-bottom: 3px solid darkcyan;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.certifikaty {
+    grid-area: certifikaty;
+    padding-left: 10px;
+}
+
+.certifikaty summary {
+    border-bottom: 3px solid darkcyan;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+.dovednosti {
+    grid-area: dovednosti;
+    color: lightgoldenrodyellow;
+    background-color: rgb(2, 2, 56);
+}
+
+.dovednosti h2 {
+    margin-left: 30px;
+}
+
+.dovednosti ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+.dovednosti ul li::before{
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    padding-right: 10px;
+}
+
+.software {
+    grid-area: software;
+    color: lightgoldenrodyellow;
+    background-color: rgb(2, 2, 56);
+    padding-bottom: 40px;
+    padding-right: 20px;
+}
+
+.software h2 {
+    margin-left: 30px;
+}
+
+.software ul {
+    list-style: none;
+}
+
+.jazyky {
+    grid-area: jazyky;
+    color: lightgoldenrodyellow;
+    background-color: rgb(2, 2, 56);
+    padding-right: 20px;
+}
+
+.jazyky h2 {
+    margin-left: 30px;
+}
+
+.jazyky ul {
+    list-style: none;
+}
+
+.kurzy {
+    grid-area: kurzy;
+    color: lightgoldenrodyellow;
+    background-color: rgb(2, 2, 56);
+    padding-right: 20px;
+}
+
+.kurzy h2,p{
+    margin-left: 30px;
+}
+.kurzy ul {
+    list-style: none;
+}
+
+.bar {
+    width: 200px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bar .progres-office {
+    width: 80%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-AutoCad {
+    width: 80%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-Inventor {
+    width: 80%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-SolidWorks {
+    width: 60%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-Code {
+    width: 50%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-CZ {
+    width: 100%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-ANG {
+    width: 80%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-HTML {
+    width: 50%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-CSS {
+    width: 50%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-PHP {
+    width: 50%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-MySQL {
+    width: 30%;
+    height: 5px;
+    background-color: darkcyan;
+}
+.bar .progres-JavaScript {
+    width: 0%;
+    height: 5px;
+    background-color: darkcyan;
+}
+
+@media (max-width: 1030px){
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    header .container {
+        width: 80vw;
+    }
+    section .container {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 900px) {
+    section .container {
+        display: flex;
+        flex-direction: column;
+    }
+    section .container details {
+        margin: 2em 0;
+    }
+}
